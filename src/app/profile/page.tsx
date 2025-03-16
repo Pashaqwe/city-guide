@@ -1,6 +1,6 @@
 import { Profile } from "@/widgets";
 import { Suspense } from "react";
-import { ProfileSkeleton } from "./ui/ProfileSkeleton";
+import { ProfileSkeleton } from "./ProfileSkeleton";
 
 function ProfilePage() {
   return (

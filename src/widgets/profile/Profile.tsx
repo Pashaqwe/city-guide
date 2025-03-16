@@ -1,16 +1,16 @@
-import { getUserInfo, UserAvatar } from "@/entities";
-import { Flex } from "antd";
+import { getUserInfo } from "@/entities";
+import { Avatar, Flex } from "antd";
 import Title from "antd/es/typography/Title";
 import { ProfileInfoItem } from "./ui/ProfileInfoItem";
 
 export async function Profile() {
-  const { firstName, lastName, email, age, country, city } =
+  const { firstName, lastName, email, age, country, city, avatar } =
     await getUserInfo();
 
   return (
     <Flex align="center" vertical>
       <Flex vertical justify="center">
-        <UserAvatar size={148} />
+        <Avatar size={148} src={avatar} />
 
         <Title level={2}>{`${firstName} ${lastName}`}</Title>
       </Flex>
