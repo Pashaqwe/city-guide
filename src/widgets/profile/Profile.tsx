@@ -1,26 +1,25 @@
 import { getUserInfo } from "@/entities";
-import { Avatar, Flex } from "antd";
+import { Avatar, Descriptions, Flex } from "antd";
 import Title from "antd/es/typography/Title";
-import { ProfileInfoItem } from "./ui/ProfileInfoItem";
+
+import { descriptionItems } from "./config/descriptionItems";
 
 export async function Profile() {
-  const { firstName, lastName, email, age, country, city, avatar } =
-    await getUserInfo();
+  const data = await getUserInfo();
 
   return (
-    <Flex align="center" vertical>
+    <Flex justify="center" align="center" gap={30}>
       <Flex vertical justify="center">
-        <Avatar size={148} src={avatar} />
+        <Avatar size={148} src={data.avatar} />
 
-        <Title level={2}>{`${firstName} ${lastName}`}</Title>
+        <Title level={2}>{`${data.firstName} ${data.lastName}`}</Title>
       </Flex>
 
-      <Flex vertical gap={15}>
-        <ProfileInfoItem label="Возраст" value={age} />
-        <ProfileInfoItem label="Страна" value={country} />
-        <ProfileInfoItem label="Город" value={city} />
-        <ProfileInfoItem label="E-mail" value={email} />
-      </Flex>
+      <Descriptions
+        style={{ maxWidth: "800px" }}
+        title="Информация о пользователе"
+        items={descriptionItems(data)}
+      />
     </Flex>
   );
 }
