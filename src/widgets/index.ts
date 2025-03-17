@@ -1,2 +1,1 @@
-export { AppHeader } from "./header/AppHeader";
-export { Profile } from "./profile/Profile";
+export { AppHeader } from "./header/ui/AppHeader";

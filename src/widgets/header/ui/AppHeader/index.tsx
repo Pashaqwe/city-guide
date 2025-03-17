@@ -1,10 +1,10 @@
 import { Flex, Menu } from "antd";
 import Link from "next/link";
 import React, { Suspense } from "react";
-import menuItems from "./config/menuItems";
 import { Header } from "antd/es/layout/layout";
 import SkeletonAvatar from "antd/es/skeleton/Avatar";
-import { UserAvatar } from "./ui/UserAvatar";
+import menuItems from "../../config/menuItems";
+import { UserAvatar } from "../UserAvatar";
 
 export function AppHeader() {
   return (

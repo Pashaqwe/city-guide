@@ -1,12 +1,21 @@
-import { Profile } from "@/widgets";
-import { Suspense } from "react";
-import { ProfileSkeleton } from "./ProfileSkeleton";
+import { ProfileDescriptions, ProfileUpdateAvatarModal } from "@/features";
+import { Flex } from "antd";
+import Title from "antd/es/typography/Title";
+import { getUserInfo } from "@/entities";
 
-function ProfilePage() {
+async function ProfilePage() {
+  const data = await getUserInfo();
+
   return (
-    <Suspense fallback={<ProfileSkeleton />}>
-      <Profile />
-    </Suspense>
+    <Flex justify="center" align="center" gap={30} vertical>
+      <Flex vertical justify="center">
+        <ProfileUpdateAvatarModal data={data} />
+
+        <Title level={2}>{`${data.firstName} ${data.lastName}`}</Title>
+      </Flex>
+
+      <ProfileDescriptions data={data} />
+    </Flex>
   );
 }
 
