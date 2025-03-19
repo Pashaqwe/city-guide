@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "id": 1,
+    "firstName": "Ivan",
+    "lastName": "Ivanov",
+    "email": "ivan@example.com",
+    "age": 28,
+    "avatar": "https://i.pinimg.com/736x/d3/91/6e/d3916ebc6a1586b62c123df6f0ba79b9.jpg",
+    "city": "Moscow",
+    "country": "Russia"
+  },
+  "cities": [
+    {
+      "id": 1,
+      "name": "Moscow",
+      "country": "Russia",
+      "population": 12678079,
+      "image": "https://example.com/images/moscow.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Saint Petersburg",
+      "country": "Russia",
+      "population": 5398064,
+      "image": "https://example.com/images/st-petersburg.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Novosibirsk",
+      "country": "Russia",
+      "population": 1625631,
+      "image": "https://example.com/images/novosibirsk.jpg"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "name": "The Hermitage",
+      "type": "museum",
+      "city_id": 2
+    },
+    {
+      "id": 2,
+      "name": "Red Square",
+      "type": "landmark",
+      "city_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Novosibirsk Zoo",
+      "type": "zoo",
+      "city_id": 3
+    }
+  ]
+}
