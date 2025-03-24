@@ -11,45 +11,157 @@
   },
   "cities": [
     {
-      "id": 1,
-      "name": "Moscow",
-      "country": "Russia",
+      "id": "1",
+      "name": "Москва",
+      "country": "Россия",
       "population": 12678079,
-      "image": "https://example.com/images/moscow.jpg"
+      "image": "https://img.freepik.com/free-photo/moscow-kremlin_1398-4382.jpg?t=st=1742372157~exp=1742375757~hmac=ea2fe9a94d3c03afeb1d51a696616e16c1cd9775dda98ce5a8c5a10da16e5490&w=1380",
+      "tags": [
+        {
+          "id": 1,
+          "name": "Столица"
+        },
+        {
+          "id": 2,
+          "name": "Исторический"
+        }
+      ],
+      "isFavorite": true,
+      "description": "Столица России с многовековой историей. Здесь сосредоточены главные политические институты, архитектурные символы вроде Кремля, и современные небоскрёбы делового центра Москва-Сити."
     },
     {
-      "id": 2,
-      "name": "Saint Petersburg",
-      "country": "Russia",
+      "id": "2",
+      "name": "Санкт-Петербург",
+      "country": "Россия",
       "population": 5398064,
-      "image": "https://example.com/images/st-petersburg.jpg"
+      "image": "https://img.freepik.com/free-photo/view-st-petersburg-winter-palace-from-neva_1398-2874.jpg?t=st=1742372238~exp=1742375838~hmac=d5867b099b771434091e9b635de792e4e40bae6fa946390645d37f17a9a1147c&w=1380",
+      "tags": [
+        {
+          "id": 3,
+          "name": "Культурный"
+        },
+        {
+          "id": 4,
+          "name": "Северная Столица"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Культурная жемчужина с дворцами-музеями и разводными мостами. Бывшая столица империи сохранила дух Петровской эпохи в своей строгой невской красоте."
     },
     {
-      "id": 3,
-      "name": "Novosibirsk",
-      "country": "Russia",
+      "id": "3",
+      "name": "Новосибирск",
+      "country": "Россия",
       "population": 1625631,
-      "image": "https://example.com/images/novosibirsk.jpg"
+      "image": "https://img.geliophoto.com/nsk2019/27_nsk2019.jpg",
+      "tags": [
+        {
+          "id": 5,
+          "name": "Наука"
+        },
+        {
+          "id": 6,
+          "name": "Сибирь"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Сердце Сибири и центр научной мысли. Знаменит Академгородком с НИИ и самым большим в России зоопарком."
+    },
+    {
+      "id": "4",
+      "name": "Екатеринбург",
+      "country": "Россия",
+      "population": 1493749,
+      "image": "https://media.istockphoto.com/id/1505862201/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D0%B0-%D0%B8%D0%BB%D0%B8-%D0%BC%D1%8D%D1%80%D0%B8%D1%8F-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C-%D0%B8-%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%B8%D0%B5-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D0%B5-%D0%B1%D0%B0%D1%88%D0%BD%D0%B8.jpg?s=612x612&w=0&k=20&c=KOabdFejXBtURk-8rPrpKEX5zbD6QpfXXxHfH61MbD4=",
+      "tags": [
+        {
+          "id": 7,
+          "name": "Урал"
+        },
+        {
+          "id": 8,
+          "name": "Промышленный"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Столица Урала, где переплелись промышленная мощь и история: от памятника основателям завода до современного Ельцин-центра."
+    },
+    {
+      "id": "5",
+      "name": "Казань",
+      "country": "Россия",
+      "population": 1257391,
+      "image": "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/fe7459ab9b50a3ca01a6dab738630d7a/",
+      "tags": [
+        {
+          "id": 9,
+          "name": "Многокультурный"
+        },
+        {
+          "id": 10,
+          "name": "Спортивный"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Город контрастов: мечеть Кул-Шариф соседствует с православными соборами, а традиционные чак-чак и эчпочмак — с IT-технологиями."
+    },
+    {
+      "id": "6",
+      "name": "Сочи",
+      "country": "Россия",
+      "population": 466078,
+      "image": "https://ekskursii-v-sochi.ru/wp-content/uploads/2016/09/disney01.jpg",
+      "tags": [
+        {
+          "id": 11,
+          "name": "Курорт"
+        },
+        {
+          "id": 12,
+          "name": "Олимпийский"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Главный черноморский курорт России. Город пальм, олимпийских стадионов и горнолыжных трасс Красной Поляны."
+    },
+    {
+      "id": "7",
+      "name": "Нижний Новгород",
+      "country": "Россия",
+      "population": 1244252,
+      "image": "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/3d299168b05eb1ca256f176abb1167c3/",
+      "tags": [
+        {
+          "id": 13,
+          "name": "Волга"
+        },
+        {
+          "id": 2,
+          "name": "Исторический"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Волжская твердыня с древним кремлём. Родина Горького и место проведения крупнейшей в царской России ярмарки."
+    },
+    {
+      "id": "8",
+      "name": "Калининград",
+      "country": "Россия",
+      "population": 489735,
+      "image": "https://content.cdn-cian.ru/realty/journal/337425/2498795371.jpg",
+      "tags": [
+        {
+          "id": 14,
+          "name": "Балтийский"
+        },
+        {
+          "id": 15,
+          "name": "Эксклав"
+        }
+      ],
+      "isFavorite": false,
+      "description": "Российское окно в Европу. Бывший Кёнигсберг с готическими соборами, янтарными мастерскими и Балтийским побережьем."
     }
   ],
-  "favorites": [
-    {
-      "id": 1,
-      "name": "The Hermitage",
-      "type": "museum",
-      "city_id": 2
-    },
-    {
-      "id": 2,
-      "name": "Red Square",
-      "type": "landmark",
-      "city_id": 1
-    },
-    {
-      "id": 3,
-      "name": "Novosibirsk Zoo",
-      "type": "zoo",
-      "city_id": 3
-    }
-  ]
+  "favorites": []
 }

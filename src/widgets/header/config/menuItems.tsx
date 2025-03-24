@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const menuItems = [
-  { key: "city", label: <Link href="/city">Города</Link> },
+  { key: "city", label: <Link href="/cities">Города</Link> },
   { key: "favorites", label: <Link href="/favorites">Избранное</Link> },
 ];
 
